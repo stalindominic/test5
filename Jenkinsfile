@@ -6,15 +6,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                mvn install
             }
         }
     }
     
-        stage('Maven build') {
-            steps {
-                mvn install
-            
-        }
-    }
 }
