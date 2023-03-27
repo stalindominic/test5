@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                mvn install
+                sh "mvn install"
             }
         }
     }
