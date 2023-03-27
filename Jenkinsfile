@@ -10,4 +10,11 @@ pipeline {
             }
         }
     }
+    stages {
+        stage('Maven build') {
+            steps {
+                mvn install
+            }
+        }
+    }
 }
